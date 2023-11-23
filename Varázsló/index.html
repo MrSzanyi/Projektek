@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mágikus Varázslóiskola</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>Mágikus Varázslóiskola</h1>
+    </header>
+    <main class="main-container">
+      <section class="inventory-container per-click js-skills-container">
+        <table class="skills-table">
+          <tbody class="js-skills-tbody"></tbody>
+        </table>
+      </section>
+      <section class="clicking-area-contanier js-clicking-area-container">
+            <div class ="js-timer-area"></div>
+            <img 
+              src="./pictures/goldcoin.png"
+              alt="arany klikkelő"
+                data-enable_click="true" 
+                class="gold-coin-two js-clicking-area-container" />
+                
+            <div class="js-gold-area"></div>
+      </section>
+      <section class="inventory-container per-sec js-employee-container">
+        <table class="employees-table">
+          <tbody class="js-employees-tbody"></tbody>
+        </table>
+      </section>
+    </main>
+    <script src="./js/clicker.js"></script>
+  </body>
+</html>

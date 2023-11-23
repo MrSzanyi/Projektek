@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Portfó Lia</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header id="home">
+      <nav class="header-nav">
+        <div class="logo">Portfó Lia</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#xp">Portfólió</a></li>
+          <li><a href="#portfolio">Tapasztalat</a></li>
+          <li><a href="#kapcsolat">Kapcsolat</a></li>
+
+          <li></li>
+        </ul>
+      </nav>
+
+      <div class="tagline">
+        <h1>Portfólió oldal</h1>
+        <a href="#" class="btn btn-full">Önéletrajz</a>
+        <a href="#" class="btn">Kapcsolat</a>
+      </div>
+    </header>
+    <section class="tapasztalat" id="xp">
+      <h2>Tapasztalat</h2>
+      <div class="container">
+        <div>
+          <img src="./images/html5-brands.svg" alt="HTML" />
+          <h3>HTML5</h3>
+          <p>
+            Szematikus markup, profi weboldal készítése, akadálymentesítése,
+            SEO-barátságos szerkezet.
+          </p>
+        </div>
+
+        <div>
+          <img src="./images/css3-alt-brands.svg" alt="css3" />
+          <h4>CSS3</h4>
+          <p>
+            Profi megjelenés, modern reszponzív, karbantartó architektúra,
+            Flexbox, Grind
+          </p>
+        </div>
+
+        <div>
+          <img src="./images/js-square-brands.svg" alt="JavaScript" />
+          <h5>JavaScript (ES2020)</h5>
+          <p>A JavaScript nagyon jó és én jó vagyok benne.</p>
+        </div>
+
+        <div>
+          <img src="./images/react-brands.svg" alt="React" />
+          <h4>React 17</h4>
+          <p>Modern React, hooks, komplex webalkalmazások fejlesztése.</p>
+        </div>
+      </div>
+    </section>
+    <section class="prejektek" id="portfolio">
+      <h2>Prejektek</h2>
+      <div class="project-list">
+        <div class="project-container">
+          <h3>Project 1</h3>
+          <a href="#"
+            ><img src="./images/projekt.jpg" alt="Project" class="project__img"
+          /></a>
+        </div>
+        <div class="project-container">
+          <h3>Project 2</h3>
+          <a href="#"
+            ><img src="./images/projekt.jpg" alt="Project" class="project__img"
+          /></a>
+        </div>
+        <div class="project-container">
+          <h3>Project 3</h3>
+          <a href="#"
+            ><img src="./images/projekt.jpg" alt="Project" class="project__img"
+          /></a>
+        </div>
+        <div class="project-container">
+          <h3>Project 4</h3>
+          <a href="#"
+            ><img src="./images/projekt.jpg" alt="Project" class="project__img"
+          /></a>
+        </div>
+        <div class="project-container">
+          <h3>Project 5</h3>
+          <a href="#"
+            ><img src="./images/projekt.jpg" alt="Project" class="project__img"
+          /></a>
+        </div>
+        <div class="project-container">
+          <h3>Project 6</h3>
+          <a href="#"
+            ><img src="./images/projekt.jpg" alt="Project" class="project__img"
+          /></a>
+        </div>
+
+        <section class="kapcsolat" id="kapcsolat">
+          <h2>Kapcsolat</h2>
+          <form
+            action="https://formspree.io/f/mgejrwag"
+            method="POST"
+            class="contact-form"
+          >
+            <input
+              type="text"
+              class="contact-form__input"
+              name="facebook_nev"
+              placeholder="Név"
+            />
+            <input
+              type="email"
+              class="contact-form__input"
+              name="email"
+              placeholder="Email"
+            />
+            <textarea
+              placeholder="Üzenet"
+              name="uzenet"
+              class="contact-form__input"
+            ></textarea>
+            <button type="submit" class="btn contact-form__submit">
+              Elküld
+            </button>
+          </form>
+        </section>
+      </div>
+    </section>
+    <footer>
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#xp">Tapasztalat</a></li>
+        <li><a href="#portfolio">Portfólió</a></li>
+        <li><a href="#kapcsolat">Kapcsolat</a></li>
+      </ul>
+      Copyright &copy; Programozás Karrier
+    </footer>
+  </body>
+</html>

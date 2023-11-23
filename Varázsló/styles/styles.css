@@ -1,0 +1,122 @@
+html {
+    font-size: 16px;
+    box-sizing: border-box; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+
+}
+.business-tabble {
+    box-sizing: content-box;
+
+}
+body {
+    min-width: 510px;
+}
+
+p {
+    user-select: none;
+}
+
+.skills-table, .employees-table {
+    margin: 0 20px 0;
+}
+
+
+/***************************Main area********************** */
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.inventory-container {
+    min-width: 540px;
+}
+
+.clicking-area-contanier {
+    text-align: center;
+
+}
+.upgrade-stats-cell {
+width: 64px;
+padding: 5px;
+user-select: none;
+cursor: pointer;
+opacity: 0.75;
+}
+
+.upgade-icon-cell:hover {
+    opacity: 1;
+}
+
+.skill-image {
+    width: 100px;
+    border-radius: 50%;
+    border: 4px solid rgb(236, 207, 110);
+    transition: opacity 0.3s, transform 0.3s;
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.skill-image:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    
+}
+
+.gold-coin-two {
+    cursor: pointer;
+    user-select: none;
+    transition: opacity 0.3s, transform 0.3s;
+
+  }
+  .gold-coin-two:hover {
+    transform: scale(1.1);
+  }
+
+@media screen and (max-width: 1400px) {
+    .main-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "gold gold"
+        "perclick persec";
+        
+    }
+
+
+
+.inventory-container.per-click {
+    
+    grid-area: perclick;
+}
+.inventory-container.per-sec {
+    grid-area: persec;
+}   
+.clicking-area-contanier {
+  
+    grid-area: gold;
+}
+
+
+
+/*
+*/
+}
+@media screen and (max-width: 992px) {
+    .main-container{
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "gold"
+        "perclick"
+        "persec";
+    }
+}
+    
+@media screen and (max-width: 576px) {
+    
+}
+    
